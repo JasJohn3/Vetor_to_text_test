@@ -41,6 +41,7 @@ int main()
 		else{cout << "New User Name Created: " << user_input << endl;}
 
 		Function always returns true.  Uncertain as to why?
+
 		iterator = find(user_data.begin(), user_data.end(), user_input);
 		if ( iterator != user_data.end())
 		{
@@ -49,7 +50,7 @@ int main()
 		}
 		lse { cout << "New User Name Created: " << user_input << endl; }
 		
-		Third and final attempt.  Erases all data in the vector.
+		Third and final attempt.  Erases all data in the vector always returns true.
 		auto it = find(user_data.begin(), user_data.end(), user_input);
 		if (it != user_data.end())
 			user_data.erase(it);
